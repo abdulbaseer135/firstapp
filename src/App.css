@@ -1,6 +1,29 @@
 .App {
   text-align: center;
 }
+.container {
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create three columns of equal width */
+  grid-gap: 20px; /* Add some spacing between items */
+}
+
+.article {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+.col-md-4 {
+  flex: 0 0 33.33%; /* Set each column to occupy one-third of the row */
+  max-width: 33.33%;
+  padding: 15px;
+}
 
 .App-logo {
   height: 40vmin;
